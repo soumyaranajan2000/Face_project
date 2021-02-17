@@ -24,7 +24,7 @@ labels = []
 for i in os.listdir(img_dir):
     image=cv2.imread(os.path.join(img_dir,i))
     image=preprossing(image)
-    images.append(images)
+    images.append(image)
     labels.append(i.split("_")[0])
 
 images=np.array(images)
